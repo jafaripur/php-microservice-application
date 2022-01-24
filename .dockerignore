@@ -1,0 +1,13 @@
+/vendor/
+/runtime/
+/.git/
+/lint
+
+/phpunit.xml
+/README.md
+/.gitignore
+/.phpunit.result.cache
+
+/packages/
+
+/rr

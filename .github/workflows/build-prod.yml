@@ -1,0 +1,38 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: ['master']
+    path:
+      - .github/**
+      - app/**
+      - tests/**
+      - docker/**
+      - composer.lock
+      - composer.json
+      - phpunit.xml.dist
+      - .dockerignore
+      - docker-compose.yml
+  pull_request:
+    branches: ['master']
+    path:
+      - .github/**
+      - app/**
+      - tests/**
+      - docker/**
+      - composer.lock
+      - composer.json
+      - .dockerignore
+      - phpunit.xml.dist
+      - docker-compose.yml
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build -f docker/Dockerfile.prod -t my-micro-app:$(date +%s) .

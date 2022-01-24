@@ -1,0 +1,68 @@
+{
+    "name": "jafaripur/php-microservice-application",
+    "type": "template",
+    "license": "MIT",
+    "description": "php-microservice skeleton console application starter for microservice node",
+    "keywords": ["microservice", "amqp", "rabbitmq", "template", "microservice-starter"],
+    "authors": [
+        {
+            "name": "Araz J",
+            "email": "mjafaripur@yahoo.com",
+            "homepage": "https://jafaripur.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "mjafaripur@yahoo.com",
+        "issues": "https://github.com/jafaripur/php-microservice-application/issues",
+        "source": "https://github.com/jafaripur/php-microservice-application",
+        "docs": "https://github.com/jafaripur/php-microservice-application/blob/master/README.md"
+    },
+    "require": {
+        "php": "^8.0",
+        "jafaripur/php-microservice": "dev-master",
+        "jafaripur/php-microservice-user-service": "dev-master",
+        "monolog/monolog": "^2.3",
+        "sentry/sdk": "^3.1",
+        "spiral/dotenv-bridge": "^2.8",
+        "spiral/framework": "^2.8",
+        "spiral/roadrunner": "^2.7",
+        "spiral/sentry-bridge": "^1.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.5",
+        "overtrue/phplint": "^4.0",
+        "phpunit/phpunit": "^9.4",
+        "vimeo/psalm": "^4.18"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php app.php configure -vv",
+            "php -r \"if (!file_exists('.env')) copy('.env.sample', '.env');\"",
+            "php -r \"if (!file_exists('phpunit.xml')) copy('phpunit.xml.dist', 'phpunit.xml');\""
+        ],
+        "psalm": "vendor/bin/psalm",
+        "phplint": "vendor/bin/phplint"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true,
+		"classmap-authoritative": true,
+        "allow-plugins": {
+            "spiral/composer-publish-plugin": true,
+            "composer/package-versions-deprecated": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

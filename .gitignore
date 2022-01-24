@@ -1,0 +1,27 @@
+# IDE & OS files
+.*.swp
+.DS_Store
+.buildpath
+.idea
+.project
+.settings
+Thumbs.db
+nbproject
+
+/packages
+
+/runtime
+
+# local config
+/.env
+
+# evolving files
+/vendor
+
+/rr
+
+/.phpunit.result.cache
+/.php-cs-fixer.cache
+/temp
+
+/phpunit.xml
