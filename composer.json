@@ -37,9 +37,9 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php app.php configure -vv",
             "php -r \"if (!file_exists('.env')) copy('.env.sample', '.env');\"",
-            "php -r \"if (!file_exists('phpunit.xml')) copy('phpunit.xml.dist', 'phpunit.xml');\""
+            "php -r \"if (!file_exists('phpunit.xml')) copy('phpunit.xml.dist', 'phpunit.xml');\"",
+            "php app.php configure -vv"
         ],
         "psalm": "vendor/bin/psalm",
         "phplint": "vendor/bin/phplint"

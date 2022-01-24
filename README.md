@@ -25,7 +25,7 @@ php app.php user-service/send-test
 
 ```bash
 
-composer create-project jafaripur/php-microservice-application micro3
+composer create-project "jafaripur/php-microservice-application dev-master" micro3
 
 ```
 
