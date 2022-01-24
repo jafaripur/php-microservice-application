@@ -1,6 +1,6 @@
 {
     "name": "jafaripur/php-microservice-application",
-    "type": "template",
+    "type": "project",
     "license": "MIT",
     "description": "php-microservice skeleton console application starter for microservice node",
     "keywords": ["microservice", "amqp", "rabbitmq", "template", "microservice-starter"],
