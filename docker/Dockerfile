@@ -7,7 +7,7 @@ RUN apk update && apk upgrade && echo "UTC" > /etc/timezone \
 	&& apk add --no-cache autoconf gcc binutils binutils-dev g++ libtool make \
 	libmcrypt-dev rabbitmq-c-dev zlib-dev libzip-dev ${PHPIZE_DEPS} \
 	&& docker-php-source extract \
-	&& docker-php-ext-install bcmath pcntl opcache sockets \
+	&& docker-php-ext-install sockets bcmath pcntl opcache \
 	&& pecl install amqp \
 	&& pecl install igbinary \
 	&& pecl install msgpack \

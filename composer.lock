@@ -1201,12 +1201,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jafaripur/php-microservice.git",
-                "reference": "989a4e74b651f0a24721eefe362a45a5b205f42f"
+                "reference": "41b1eb076d6ce3434be80f15ae7f0e80000c2bba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jafaripur/php-microservice/zipball/989a4e74b651f0a24721eefe362a45a5b205f42f",
-                "reference": "989a4e74b651f0a24721eefe362a45a5b205f42f",
+                "url": "https://api.github.com/repos/jafaripur/php-microservice/zipball/41b1eb076d6ce3434be80f15ae7f0e80000c2bba",
+                "reference": "41b1eb076d6ce3434be80f15ae7f0e80000c2bba",
                 "shasum": ""
             },
             "require": {
@@ -1227,7 +1227,7 @@
             "suggest": {
                 "ext-amqp": "Using native AMQP wrapper.",
                 "ext-msgpack": "Using for msgpack for payload serialize and unserialize.",
-                "jafaripur/php-microservice-application": "Sample application using this library"
+                "jafaripur/php-microservice-application": "Sample microservice application template using this library"
             },
             "default-branch": true,
             "type": "library",
@@ -1260,7 +1260,7 @@
                 "issues": "https://github.com/jafaripur/php-microservice/issues",
                 "source": "https://github.com/jafaripur/php-microservice"
             },
-            "time": "2022-01-24T10:40:07+00:00"
+            "time": "2022-01-24T10:57:56+00:00"
         },
         {
             "name": "jafaripur/php-microservice-user-service",
@@ -1268,12 +1268,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jafaripur/php-microservice-user-service.git",
-                "reference": "c95f1c5046a12e148598884979ef1dd498b1d3fb"
+                "reference": "d4b540f061987faaadbd1a0a69e3a949c5099a2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jafaripur/php-microservice-user-service/zipball/c95f1c5046a12e148598884979ef1dd498b1d3fb",
-                "reference": "c95f1c5046a12e148598884979ef1dd498b1d3fb",
+                "url": "https://api.github.com/repos/jafaripur/php-microservice-user-service/zipball/d4b540f061987faaadbd1a0a69e3a949c5099a2b",
+                "reference": "d4b540f061987faaadbd1a0a69e3a949c5099a2b",
                 "shasum": ""
             },
             "require": {
@@ -1286,7 +1286,7 @@
                 "vimeo/psalm": "^4.18"
             },
             "suggest": {
-                "jafaripur/php-microservice-application": "Microservice application which this library created for calling thats method."
+                "jafaripur/php-microservice-application": "Sample microservice application template using this library"
             },
             "default-branch": true,
             "type": "library",
@@ -1319,7 +1319,7 @@
                 "issues": "https://github.com/jafaripur/php-microservice-user-service/issues",
                 "source": "https://github.com/jafaripur/php-microservice-user-service"
             },
-            "time": "2022-01-23T13:16:46+00:00"
+            "time": "2022-01-24T10:59:59+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
