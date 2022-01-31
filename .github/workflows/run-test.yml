@@ -17,7 +17,7 @@ on:
     branches: ['dev']
     path:
       - .github/**
-      - src/**
+      - app/**
       - tests/**
       - docker/**
       - composer.lock
