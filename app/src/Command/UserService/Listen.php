@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Command\UserService;
 
 use Araz\Service\User\UserService;
+use Psr\Container\ContainerInterface;
 use Spiral\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 
@@ -19,8 +20,8 @@ class Listen extends Command
     /**
      * This method supports argument injection.
      */
-    public function perform(UserService $userService): void
+    public function perform(ContainerInterface $container): void
     {
-        $userService->listen((array)$this->argument('consumers'));
+        $container->get('user-service-queue')->getConsumer()->consume(0, (array)$this->argument('consumers'));
     }
 }
