@@ -3,7 +3,7 @@
     "type": "project",
     "license": "MIT",
     "description": "php-microservice skeleton console application starter for microservice node",
-    "keywords": ["microservice", "amqp", "rabbitmq", "template", "microservice-starter"],
+    "keywords": ["Spiral", "microservice", "amqp", "rabbitmq", "template", "microservice-starter"],
     "authors": [
         {
             "name": "Araz J",
@@ -21,7 +21,7 @@
     "require": {
         "php": "^8.0",
         "jafaripur/php-microservice": "dev-master",
-        "jafaripur/php-microservice-user-service": "*",
+        "jafaripur/php-microservice-user-service": "dev-master",
         "monolog/monolog": "^2.3",
         "sentry/sdk": "^3.1",
         "spiral/dotenv-bridge": "^2.8",
