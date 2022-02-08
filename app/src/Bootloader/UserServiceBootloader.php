@@ -20,7 +20,6 @@ final class UserServiceBootloader extends Bootloader
 {
     public function boot(Container $container, EnvironmentInterface $env, LogsInterface $logs): void
     {
-
         $container->bindSingleton('user-service-queue', bind(Queue::class, [
             'appName' => $env->get('APP_NAME'),
             'transport' => [
@@ -37,10 +36,10 @@ final class UserServiceBootloader extends Bootloader
             'processorConsumers' => [
                 \App\Queue\Consumer\ConsumerFirst::class,
                 \App\Queue\Consumer\ConsumerSecond::class,
-            ]
+            ],
         ]));
 
-        $container->bindSingleton(UserService::class, function() use ($container){
+        $container->bindSingleton(UserService::class, function () use ($container) {
             return new UserService($container->get('user-service-queue'));
         });
     }
