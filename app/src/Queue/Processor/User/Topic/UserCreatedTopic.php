@@ -8,7 +8,7 @@ use App\Queue\Processor\User\UserTopic;
 
 final class UserCreatedTopic extends UserTopic
 {
-    public function execute(mixed $body): void
+    public function execute(string $routingKey, mixed $body): void
     {
     }
 
