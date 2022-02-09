@@ -1319,12 +1319,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jafaripur/php-microservice.git",
-                "reference": "e260af1b080d616862313aa0d1be1e1bd36dc2e4"
+                "reference": "d5d50dec156bf8540c7d21ff135fdf848bcf960c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jafaripur/php-microservice/zipball/e260af1b080d616862313aa0d1be1e1bd36dc2e4",
-                "reference": "e260af1b080d616862313aa0d1be1e1bd36dc2e4",
+                "url": "https://api.github.com/repos/jafaripur/php-microservice/zipball/d5d50dec156bf8540c7d21ff135fdf848bcf960c",
+                "reference": "d5d50dec156bf8540c7d21ff135fdf848bcf960c",
                 "shasum": ""
             },
             "require": {
@@ -1380,7 +1380,7 @@
                 "issues": "https://github.com/jafaripur/php-microservice/issues",
                 "source": "https://github.com/jafaripur/php-microservice"
             },
-            "time": "2022-02-08T14:59:27+00:00"
+            "time": "2022-02-09T11:43:17+00:00"
         },
         {
             "name": "jafaripur/php-microservice-user-service",
