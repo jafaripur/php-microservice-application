@@ -1,5 +1,8 @@
 # Microservice Application Skeleton
 
+![prod-build](https://github.com/jafaripur/php-microservice-application/actions/workflows/build-prod.yml/badge.svg)
+![test](https://github.com/jafaripur/php-microservice-application/actions/workflows/run-test.yml/badge.svg)
+
 `Spiral` console application used to write our processors of methods to responsible to client calling.
 
 
