@@ -17,6 +17,7 @@ use Spiral\Framework\Kernel;
 class App extends Kernel
 {
     protected const APP = [
+        \App\Bootloader\MicroServiceQueueBootloader::class,
         \App\Bootloader\UserServiceBootloader::class,
     ];
 
