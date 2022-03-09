@@ -6,7 +6,7 @@ $finder = PhpCsFixer\Finder::create()
         '.git',
         'packages'
     ])
-    ->in(__DIR__ . "/../../");
+    ->in(__DIR__);
 
 $config = new PhpCsFixer\Config();
 
