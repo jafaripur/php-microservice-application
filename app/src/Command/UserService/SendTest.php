@@ -28,8 +28,8 @@ class SendTest extends Command
             ->getUserInformation(['id' => '123'], 'cor-test-1236', 2000);
 
         $this->sprintf("Sending command to CommandSender::getUserInformation()\n");
-        $result = $userService->commands()->getUserInformation(['id' => '123']);
-        $this->sprintf(print_r($result, true) . "\n\n");
+        $response = $userService->commands()->getUserInformation(['id' => '123']);
+        $this->sprintf(print_r($response->getBody(), true) . "\n\n");
 
         $this->sprintf("Sending emit to EmitSender::userLoggedIn()\n");
         $msgId = $userService->emits()->userLoggedIn(['id' => '123']);
@@ -54,8 +54,8 @@ class SendTest extends Command
         $this->sprintf('Worker message ID: %s' . "\n\n", $msgId);
 
         $this->sprintf("Receiving async command from UserService::getUserInformation ...");
-        foreach ($userAsyncCommands->receive() as $correlationId => $data) {
-            $this->sprintf(print_r([$correlationId => $data], true) . "\n\n");
+        foreach ($userAsyncCommands->receive() as $correlationId => $response) {
+            $this->sprintf(print_r([$correlationId => $response->getBody()], true) . "\n\n");
         }
     }
 }
