@@ -4,7 +4,7 @@ on:
   push:
     branches: ['master']
     path:
-      - .github/**
+      - .github/workflows/build-prod.yml
       - app/**
       - tests/**
       - docker/**
@@ -16,7 +16,7 @@ on:
   pull_request:
     branches: ['master']
     path:
-      - .github/**
+      - .github/workflows/build-prod.yml
       - app/**
       - tests/**
       - docker/**
