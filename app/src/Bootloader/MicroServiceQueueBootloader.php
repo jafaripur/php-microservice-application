@@ -1,7 +1,7 @@
 <?php
 
 /**
- * User service implement
+ * User service implement.
  */
 
 declare(strict_types=1);
@@ -23,7 +23,7 @@ final class MicroServiceQueueBootloader extends Bootloader
                 'lazy' => true,
                 'persisted' => true,
                 'heartbeat' => 10,
-                "qos_prefetch_count" => 1,
+                'qos_prefetch_count' => 1,
             ],
         ]));
     }

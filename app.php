@@ -31,7 +31,8 @@ require __DIR__ . '/vendor/autoload.php';
 //
 $app = App::init(['root' => __DIR__]);
 
-if ($app !== null) {
+if (null !== $app) {
     $code = (int)$app->serve();
+
     exit($code);
 }

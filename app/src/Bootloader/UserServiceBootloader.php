@@ -1,7 +1,7 @@
 <?php
 
 /**
- * User service implement
+ * User service implement.
  */
 
 declare(strict_types=1);

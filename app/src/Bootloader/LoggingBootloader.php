@@ -1,7 +1,7 @@
 <?php
 
 /**
- * User service implement
+ * User service implement.
  */
 
 declare(strict_types=1);
@@ -22,12 +22,11 @@ final class LoggingBootloader extends Bootloader
 
     public function boot(MonologBootloader $monolog, EnvironmentInterface $env): void
     {
-
-        //stderr
+        // stderr
         $monolog->addHandler('default', new StreamHandler('php://stdout', $env->get('DEBUG') ? Logger::DEBUG : Logger::WARNING));
 
-        if ($env->get("SENTRY_DSN")) {
-            $client = \Sentry\ClientBuilder::create(['dsn' => $env->get("SENTRY_DSN")])->getClient();
+        if ($env->get('SENTRY_DSN')) {
+            $client = \Sentry\ClientBuilder::create(['dsn' => $env->get('SENTRY_DSN')])->getClient();
             $monolog->addHandler($env->get('APP_NAME'), new \Sentry\Monolog\Handler(new \Sentry\State\Hub($client), Logger::ERROR));
         }
     }

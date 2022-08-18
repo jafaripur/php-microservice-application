@@ -6,4 +6,4 @@ php ./vendor/bin/phplint
 
 php ./vendor/bin/psalm
 
-php ./vendor/bin/phpunit
+#php ./vendor/bin/phpunit

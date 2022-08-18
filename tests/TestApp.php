@@ -11,10 +11,11 @@ class TestApp extends App
     /**
      * Get object from the container.
      *
-     * @param string      $alias
-     * @param string|null $context
-     * @return mixed|object|null
+     * @param string $alias
+     *
      * @throws \Throwable
+     *
+     * @return null|mixed|object
      */
     public function get($alias, string $context = null)
     {

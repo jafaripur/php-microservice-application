@@ -26,7 +26,6 @@ class App extends Kernel
      * within system container on application start.
      */
     protected const LOAD = [
-
         // Environment configuration
         \Spiral\DotEnv\Bootloader\DotenvBootloader::class,
 
@@ -38,6 +37,5 @@ class App extends Kernel
 
         \Spiral\Bootloader\DebugBootloader::class,
         \Spiral\Bootloader\Debug\LogCollectorBootloader::class,
-
     ];
 }

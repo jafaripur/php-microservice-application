@@ -11,9 +11,6 @@ use Spiral\Console\Console;
 
 trait InteractsWithConsole
 {
-    /**
-     * @return \Spiral\Console\Console
-     */
     public function console(): Console
     {
         return $this->app->get(Console::class);
